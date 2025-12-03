@@ -91,6 +91,7 @@ export default function useIdleGame() {
       setPoints(prev => prev - currentCost * 2);
       setUpgrades(prev => prev + 1);
       setCurrentCost(cost)
+      return { success: true, message: "Amélioration achetée !" };
     }
 
 
